@@ -34,21 +34,21 @@ const Navbar = () => {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 1024px)");
 
-    const handleResize = () => {
+    const handleMenuClose = () => {
       if (mediaQuery.matches) {
         setIsMenuOpen(false);
       }
     };
 
-    mediaQuery.addEventListener("change", handleResize);
+    mediaQuery.addEventListener("change", handleMenuClose);
 
     return () => {
-      mediaQuery.removeEventListener("change", handleResize);
+      mediaQuery.removeEventListener("change", handleMenuClose);
     };
   }, []);
 
   return (
-    <div className="n sticky top-0 z-5 bg-inherit/92 py-5 lg:px-10">
+    <header className="sticky top-0 z-5 bg-inherit/92 py-5 lg:px-10">
       <nav className="relative container mx-auto flex items-center justify-between">
         <Link
           className="flex items-center gap-2 pl-5 text-lg font-medium lg:pl-0 lg:text-xl"
@@ -72,7 +72,7 @@ const Navbar = () => {
               <li key={navigation.id} className="whitespace-nowrap">
                 <Link
                   href={navigation.linkTo}
-                  className="decoration-cyan-300 hover:underline"
+                  className="decoration-cyan-300 lg:hover:underline"
                 >
                   {navigation.title}
                 </Link>
@@ -96,7 +96,7 @@ const Navbar = () => {
           {isMenuOpen ? <X /> : <MenuIcon />}
         </button>
       </nav>
-    </div>
+    </header>
   );
 };
 
