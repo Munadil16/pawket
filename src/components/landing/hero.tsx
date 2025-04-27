@@ -14,7 +14,7 @@ const Hero = () => {
 
       <button
         type="button"
-        className="group mt-4 flex cursor-pointer items-center gap-1 rounded-lg border-2 border-white/80 bg-cyan-300 px-3 py-2 text-sm font-semibold text-black/90 sm:px-4 sm:py-3"
+        className="group mt-4 flex cursor-pointer items-center gap-1 rounded-lg border border-white/80 bg-cyan-300 px-3 py-2 text-sm font-semibold text-black/90 sm:px-4 sm:py-3"
       >
         Sign up for Free
         <ArrowRight

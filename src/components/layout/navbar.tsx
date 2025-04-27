@@ -48,7 +48,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-5 bg-inherit/92 py-5 lg:px-10">
+    <header className="sticky top-0 z-5 bg-neutral-900 py-5 lg:px-10">
       <nav className="relative container mx-auto flex items-center justify-between">
         <Link
           className="flex items-center gap-2 pl-5 text-lg font-medium lg:pl-0 lg:text-xl"
@@ -65,7 +65,7 @@ const Navbar = () => {
         </Link>
 
         <ul
-          className={`flex-col gap-5 font-medium lg:flex-row lg:items-center lg:gap-10 ${isMenuOpen ? "absolute top-16 flex h-dvh w-full p-5" : "hidden lg:flex"}`}
+          className={`flex-col gap-5 font-medium lg:flex-row lg:items-center lg:gap-10 ${isMenuOpen ? "absolute top-12 flex h-dvh w-full bg-neutral-900 p-5" : "hidden lg:flex"}`}
         >
           {navigationLinks.map((navigation) => {
             return (
