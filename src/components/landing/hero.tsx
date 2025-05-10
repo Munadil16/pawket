@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="container mx-auto flex flex-col items-center justify-center gap-2 px-5 py-10 sm:gap-4">
+    <section className="container mx-auto flex flex-col items-center justify-center gap-2 px-5 py-5 sm:gap-4 lg:px-10 lg:py-10">
       <h1 className="text-center text-3xl font-semibold sm:max-w-xl sm:text-5xl">
         Step into the Future of Crypto Trading
       </h1>
