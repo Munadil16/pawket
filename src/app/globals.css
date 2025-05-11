@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@keyframes icons-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-50% - 6px));
+  }
+}
+
+@keyframes icons-marquee-reverse {
+  0% {
+    transform: translateX(calc(-50% - 6px));
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@layer utilities {
+  .animate-marquee {
+    animation: icons-marquee 20s linear infinite;
+  }
+
+  .animate-marquee-reverse {
+    animation: icons-marquee-reverse 20s linear infinite;
+  }
+}

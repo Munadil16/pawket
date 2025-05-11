@@ -79,7 +79,7 @@ const JoinRevolution = () => {
             <div className="flex items-center justify-between gap-8">
               <div className="flex items-center gap-4">
                 <Image
-                  src={"/assets/images/bitcoin-logo.webp"}
+                  src={"/assets/images/coins/bitcoin.webp"}
                   alt="Bitcoin Logo"
                   width={20}
                   height={20}
@@ -103,7 +103,7 @@ const JoinRevolution = () => {
             <div className="flex items-center justify-between gap-8">
               <div className="flex items-center gap-4">
                 <Image
-                  src={"/assets/images/ethereum-logo.webp"}
+                  src={"/assets/images/coins/ethereum.webp"}
                   alt="Ethereum Logo"
                   width={20}
                   height={20}
