@@ -26,15 +26,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-5 bg-neutral-900 py-5 lg:px-10">
+    <header className="sticky top-0 z-50 bg-neutral-900 px-5 py-5 lg:px-10">
       <nav className="relative container mx-auto flex items-center justify-between">
         <Link
-          className="flex items-center gap-2 pl-5 text-lg font-medium lg:pl-0 lg:text-xl"
+          className="flex items-center gap-2 text-lg font-medium lg:text-xl"
           href={"/"}
         >
           <Image
             loading="eager"
-            src={"/assets/pawket-logo.png"}
+            src={"/assets/images/pawket-logo.png"}
             width={35}
             height={35}
             alt="Pawket Logo"
@@ -67,9 +67,10 @@ const Navbar = () => {
         </button>
 
         <button
-          className="pr-5 lg:hidden"
+          className="cursor-pointer lg:hidden"
           type="button"
           onClick={() => setIsMenuOpen((p) => !p)}
+          aria-label="Open Menu"
         >
           {isMenuOpen ? <X /> : <MenuIcon />}
         </button>

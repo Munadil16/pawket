@@ -14,7 +14,7 @@ const Footer = () => {
         <section className="flex flex-col gap-5 lg:w-2/3">
           <div className="flex items-center gap-1">
             <Image
-              src={"/assets/pawket-logo.png"}
+              src={"/assets/images/pawket-logo.png"}
               alt="Pawket logo"
               width={25}
               height={25}
