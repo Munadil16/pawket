@@ -26,10 +26,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-neutral-900 px-5 py-5 lg:px-10">
+    <header className="sticky top-0 z-50 bg-neutral-900 py-5 lg:px-10">
       <nav className="relative container mx-auto flex items-center justify-between">
         <Link
-          className="flex items-center gap-2 text-lg font-medium lg:text-xl"
+          className="flex items-center gap-2 pl-5 text-lg font-medium lg:pl-0 lg:text-xl"
           href={"/"}
         >
           <Image
@@ -43,7 +43,7 @@ const Navbar = () => {
         </Link>
 
         <ul
-          className={`flex-col gap-5 font-medium lg:flex-row lg:items-center lg:gap-10 ${isMenuOpen ? "absolute top-12 flex h-dvh w-full bg-neutral-900 p-5" : "hidden lg:flex"}`}
+          className={`flex-col gap-5 font-medium lg:flex-row lg:items-center lg:gap-10 ${isMenuOpen ? "absolute top-12 flex h-dvh w-full bg-neutral-900 px-10 py-5" : "hidden lg:flex"}`}
         >
           {navigationLinks.map((navigation) => {
             return (
@@ -67,7 +67,7 @@ const Navbar = () => {
         </button>
 
         <button
-          className="cursor-pointer lg:hidden"
+          className="cursor-pointer pr-5 lg:hidden lg:pr-0"
           type="button"
           onClick={() => setIsMenuOpen((p) => !p)}
           aria-label="Open Menu"

@@ -11,7 +11,7 @@ const Metrics = () => {
         <ul className="flex flex-wrap items-center justify-between gap-7 sm:gap-10 lg:flex-nowrap xl:justify-center xl:gap-28">
           {metrics.map((metric) => {
             return (
-              <li key={metric.id} className="basis-1/3 sm:basis-auto">
+              <li key={metric.id} className="basis-2/5 sm:basis-auto">
                 <span className="text-3xl font-semibold text-cyan-400 sm:text-4xl lg:text-6xl">
                   {metric.value}
                 </span>
