@@ -2,9 +2,9 @@ import { metrics } from "@/lib/constants/metrics.constants";
 
 const Metrics = () => {
   return (
-    <section className="px-5 py-5 lg:px-10 lg:py-10">
+    <section className="p-5 lg:p-10">
       <div className="container mx-auto">
-        <h2 className="pb-5 text-center text-3xl font-semibold sm:text-5xl lg:pb-10">
+        <h2 className="pb-5 text-center text-3xl font-semibold sm:text-4xl lg:pb-10">
           Trading Metrics
         </h2>
 

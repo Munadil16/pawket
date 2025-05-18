@@ -2,6 +2,7 @@ import { Hero } from "./hero";
 import { CoinsMarquee } from "./coins-marquee";
 import { JoinRevolution } from "./join-revolution";
 import { Metrics } from "./metrics";
+import { FAQs } from "./faqs";
 
 const LandingPage = () => {
   return (
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <CoinsMarquee />
       <JoinRevolution />
       <Metrics />
+      <FAQs />
     </main>
   );
 };

@@ -30,6 +30,7 @@ const Navbar = () => {
       <nav className="relative container mx-auto flex items-center justify-between">
         <Link
           className="flex items-center gap-2 pl-5 text-lg font-medium lg:pl-0 lg:text-xl"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           href={"/"}
         >
           <Image
@@ -43,14 +44,15 @@ const Navbar = () => {
         </Link>
 
         <ul
-          className={`flex-col gap-5 font-medium lg:flex-row lg:items-center lg:gap-10 ${isMenuOpen ? "absolute top-12 flex h-dvh w-full bg-neutral-900 px-10 py-5" : "hidden lg:flex"}`}
+          className={`flex-col gap-5 font-medium lg:flex-row lg:items-center lg:gap-10 ${isMenuOpen ? "absolute top-12 flex h-dvh w-full bg-neutral-900 px-10 py-5 text-xl" : "hidden lg:flex"}`}
         >
           {navigationLinks.map((navigation) => {
             return (
               <li key={navigation.id} className="whitespace-nowrap">
                 <Link
                   href={navigation.linkTo}
-                  className="decoration-cyan-300 lg:hover:underline"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="decoration-cyan-300 underline-offset-4 lg:hover:underline"
                 >
                   {navigation.title}
                 </Link>

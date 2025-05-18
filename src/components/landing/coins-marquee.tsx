@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { coins } from "@/lib/constants/coins.constants";
 
 const CoinsMarquee = () => {
@@ -6,7 +7,7 @@ const CoinsMarquee = () => {
       <section className="flex items-center gap-3 overflow-hidden pt-5 pb-2 lg:pt-10 2xl:container 2xl:mx-auto">
         <div className="animate-marquee flex gap-3">
           {[...coins, ...coins].map((coin, index) => (
-            <img
+            <Image
               key={index}
               src={coin.imageSrc}
               alt={coin.alt}
@@ -19,7 +20,7 @@ const CoinsMarquee = () => {
 
         <div className="animate-marquee flex gap-3" aria-hidden="true">
           {[...coins, ...coins].map((coin, index) => (
-            <img
+            <Image
               key={index}
               src={coin.imageSrc}
               alt={coin.alt}
@@ -32,7 +33,7 @@ const CoinsMarquee = () => {
 
         <div className="animate-marquee flex gap-3" aria-hidden="true">
           {[...coins, ...coins].map((coin, index) => (
-            <img
+            <Image
               key={index}
               src={coin.imageSrc}
               alt={coin.alt}
@@ -47,7 +48,7 @@ const CoinsMarquee = () => {
       <section className="flex gap-3 overflow-hidden pt-1 pb-5 lg:pb-10 2xl:container 2xl:mx-auto">
         <div className="animate-marquee-reverse flex gap-3" aria-hidden="true">
           {[...coins, ...coins].map((coin, index) => (
-            <img
+            <Image
               key={index}
               src={coin.imageSrc}
               alt={coin.alt}
@@ -60,7 +61,7 @@ const CoinsMarquee = () => {
 
         <div className="animate-marquee-reverse flex gap-3" aria-hidden="true">
           {[...coins, ...coins].map((coin, index) => (
-            <img
+            <Image
               key={index}
               src={coin.imageSrc}
               alt={coin.alt}
@@ -73,7 +74,7 @@ const CoinsMarquee = () => {
 
         <div className="animate-marquee-reverse flex gap-3" aria-hidden="true">
           {[...coins, ...coins].map((coin, index) => (
-            <img
+            <Image
               key={index}
               src={coin.imageSrc}
               alt={coin.alt}
