@@ -60,7 +60,7 @@ const JoinRevolution = () => {
   }, []);
 
   return (
-    <section className="p-5 lg:p-10">
+    <section className="scroll-mt-14 p-5 lg:p-10" id="join-us">
       <div className="container mx-auto flex flex-col items-center justify-center">
         <p className="bg-gradient-to-b from-cyan-300 from-30% to-cyan-700 to-100% bg-clip-text text-center text-sm font-medium text-transparent">
           JOIN THE REVOLUTION

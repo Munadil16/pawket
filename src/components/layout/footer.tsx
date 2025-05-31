@@ -31,13 +31,15 @@ const Footer = () => {
             {socialMediaLinks.map((medium) => {
               return (
                 <li key={medium.id}>
-                  <Image
-                    className="cursor-pointer invert"
-                    src={medium.imageSrc}
-                    alt={medium.alt}
-                    width={20}
-                    height={20}
-                  />
+                  <Link href={medium.linkTo} target="_blank">
+                    <Image
+                      className="cursor-pointer invert"
+                      src={medium.imageSrc}
+                      alt={medium.alt}
+                      width={20}
+                      height={20}
+                    />
+                  </Link>
                 </li>
               );
             })}

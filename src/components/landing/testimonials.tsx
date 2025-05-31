@@ -3,7 +3,7 @@ import { testimonials } from "@/lib/constants/testimonials.constants";
 
 const Testimonials = () => {
   return (
-    <section className="p-5 lg:p-10">
+    <section className="scroll-mt-14 p-5 lg:p-10" id="testimonials">
       <div className="container mx-auto flex max-w-5xl flex-col items-center">
         <span className="rounded-full border border-cyan-200/70 px-3 py-1 text-xs text-cyan-300">
           Testimonials
@@ -23,7 +23,7 @@ const Testimonials = () => {
                 className={`flex flex-col justify-between gap-10 rounded-2xl border border-gray-300 bg-cyan-100 p-5 text-black ${isBigCard ? "lg:row-span-2" : ""}`}
               >
                 <p className="text-xs text-black/90 lg:text-sm">
-                  "{testimonial.description}"
+                  &quot;{testimonial.description}&quot;
                 </p>
 
                 <div className="flex items-center gap-2">

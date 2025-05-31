@@ -3,16 +3,19 @@ const socialMediaLinks = [
     id: 1,
     imageSrc: "/assets/social-media-icons/x.svg",
     alt: "X - Social Media Icon",
+    linkTo: "https://x.com/munadil_xd",
   },
   {
     id: 2,
     imageSrc: "/assets/social-media-icons/instagram.svg",
     alt: "Instagram - Social Media Icon",
+    linkTo: "/",
   },
   {
     id: 3,
     imageSrc: "/assets/social-media-icons/github.svg",
     alt: "Github - Social Media Icon",
+    linkTo: "https://github.com/Munadil16",
   },
 ];
 

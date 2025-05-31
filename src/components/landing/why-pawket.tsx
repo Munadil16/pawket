@@ -1,10 +1,9 @@
-import Image from "next/image";
-import { ArrowRight, Cpu } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { whyPawket } from "@/lib/constants/why-pawket";
 
 const WhyPawket = () => {
   return (
-    <section className="p-5 lg:p-10">
+    <section className="scroll-mt-14 p-5 lg:p-10" id="why-pawket">
       <div className="container mx-auto xl:max-w-5xl">
         <span className="text-sm text-white/70">Why Pawket?</span>
 

@@ -1,23 +1,23 @@
 const navigationLinks = [
   {
     id: 1,
-    title: "About Us",
-    linkTo: "#about-us",
+    title: "Join Us",
+    linkTo: "#join-us",
   },
   {
     id: 2,
+    title: "Why Pawket",
+    linkTo: "#why-pawket",
+  },
+  {
+    id: 3,
     title: "Testimonials",
     linkTo: "#testimonials",
   },
   {
-    id: 3,
+    id: 4,
     title: "FAQs",
     linkTo: "#faqs",
-  },
-  {
-    id: 4,
-    title: "Contact Us",
-    linkTo: "#contact-us",
   },
 ];
 
