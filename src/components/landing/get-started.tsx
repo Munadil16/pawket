@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const GetStarted = () => {
   return (
-    <section className="bg-cyan-200 p-5 lg:p-10">
+    <section className="bg-cyan-100 p-5 lg:p-10">
       <div className="container mx-auto">
         <h2 className="text-center text-2xl font-semibold text-black/90 sm:text-4xl">
           Get started today with Pawket
